@@ -19,7 +19,7 @@ android {
     defaultConfig {
         applicationId "com.yunbao.phonelive"
         minSdkVersion rootProject.ext.android.minSdkVersion
-        targetSdkVersion 28
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
         versionCode rootProject.ext.android.versionCode
         versionName rootProject.ext.android.versionName
         manifestPlaceholders = rootProject.ext.manifestPlaceholders
@@ -33,6 +33,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
         debug {
             signingConfig signingConfigs.release

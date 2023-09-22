@@ -88,7 +88,8 @@
         tools:replace="android:name">
         <activity
             android:name=".activity.LauncherActivity"
-            android:theme="@style/LauncherAppTheme">
+            android:theme="@style/LauncherAppTheme"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
